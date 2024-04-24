@@ -49,7 +49,7 @@ NOTE : VARCHAR(50) berfungsi seperti string, untuk memberi batas 50 kata dalam t
 
 #### 6. Ubah tipe data kolom id menjadi char(11)!
 
-   ![alt text](image-1.png)
+   ![alt text](gambar4.png)
    
 ### Penjelasan: 
 - `ALTER TABLE biodata MODIFY id CHAR(11);` Mengubah type id dari INT ke CHAR.
