@@ -14,7 +14,7 @@
 
 #### 1. Buat sebuah database dengan nama latihan2!
 
-   ![alt text](image.png)
+   ![alt text](gambar1.png)
    
 ### Penjelasan:
 Gunakan perintah `CREAT DATABASE nama_database;` untuk membuat database baru. 
@@ -23,7 +23,7 @@ Dan `SHOW DATABASES;` Untuk melihat database yg kalian punya.
 #### 2. Buat sebuah tabel dengan nama biodata (nama, alamat) didalam database latihan1!
 #### 3. Tambahkan sebuah kolom keterangan (varchar 15), sebagai kolom terakhir!
 
-   ![alt text](image-1.png)
+   ![alt text](gambar2.png)
 
 ### Penjelasan:
 - `USE latihan2;` Untuk mengunakan databes.
@@ -35,21 +35,21 @@ NOTE : VARCHAR(50) berfungsi seperti string, untuk memberi batas 50 kata dalam t
  
 #### 4. Tambahkan kolom id (int 11) di awal (sebagai kolom pertama)!
  
-   ![alt text](image-2.png)
+   ![alt text](gambar3.png)
 
 ### Penjelasan:
 - `ALTER TABLE biodata ADD COLUMN id INT(11) FIRST;` Add field id dengan integer maks 11 angka, di atas Kolom Nama.
 
 #### 5. Sisipkan sebuah kolom dengan nama phone (varchar 15) setelah kolom alamat!
 
-   ![alt text](image-3.png)
+   ![alt text](gambar5.png)
    
 ### Penjelasan:
 - `ALTER TABLE biodata ADD COLUMN Phone VARCHAR(15) AFTER Alamat;` Add field Phone dengan VARCHAR(50), setelah kplom Alamat.
 
 #### 6. Ubah tipe data kolom id menjadi char(11)!
 
-   ![alt text](image-4.png)
+   ![alt text](image-1.png)
    
 ### Penjelasan: 
 - `ALTER TABLE biodata MODIFY id CHAR(11);` Mengubah type id dari INT ke CHAR.
@@ -57,7 +57,7 @@ NOTE : VARCHAR(50) berfungsi seperti string, untuk memberi batas 50 kata dalam t
 #### 7. Ubah nama kolom phone menjadi hp (varchar 20)!
 #### 8. Tambahkan kolom email setelah kolom hp.
 
-   ![alt text](image-5.png)
+   ![alt text](gambar6.png)
 
 ### Penjelasan:
 - `ALTER TABLE biodata CHANGE Phone Ph VARCHAR(20);` Ubah field Phone menjadi Ph. 
@@ -67,7 +67,7 @@ NOTE : VARCHAR(50) berfungsi seperti string, untuk memberi batas 50 kata dalam t
 #### 10. Ganti nama tabel menjadi data_mahasiswa!
 #### 11. Ganti nama field id menjadi nim!
 
-   ![alt text](image-6.png)
+   ![alt text](gambar7.png)
 
 ### Penjelasan:
 - `ALTER TABLE biodata DROP Keterangan;` Hapus field Keterangan dari table biodata.
@@ -77,7 +77,7 @@ NOTE : VARCHAR(50) berfungsi seperti string, untuk memberi batas 50 kata dalam t
 #### 12. Jadikan nim sebagai PRIMARY KEY!
 #### 13. Jadikan kolom email sebagai UNIQUE KEY
 
-   ![alt text](image-7.png)
+   ![alt text](gambar8.png)
 
 ### Penjelasan:
 - `ALTER TABLE data_mahasiswa ADD PRIMARY KEY (NIM);` Menjadikan data_mahasiswa menjadi PRIMARY KEY.
